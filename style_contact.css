@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400&family=Oswald:wght@300&display=swap');
+
+body {
+	padding : 0;
+	margin: 0;
+	font-family: 'Noto Sans Display', sans-serif;
+	text-align: justify;
+}
+
+#container-fluid-navbar {
+	background-color: rgb(99,205,218);
+}
+
+.navbar {
+	font-size: 17px;
+	position: sticky;
+	top: 0;
+	color: white;
+}
+
+#profile {
+	display: flex;
+	align-items: center;
+}
+
+#profile img {
+	width: 80px;
+	height: 80px;
+}
+
+#profile h1 {
+	margin-left: 20px;
+	font-size: 30px;
+}
+
+.navbar-nav {
+	display: flex;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+	text-decoration: none;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.navbar-nav .nav-link:hover {
+	border-bottom-color: #000; 
+}
+
+#page-content a {
+	color: rgb(99,205,218);
+}
+
+#page-content header {
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+#page-content header h1 {
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vw;
+}
+
+#page-content header p {
+	line-height: 30px;
+	color: #818181;
+}
+
+#page-content #actualite button {
+	background-color: rgb(99,205,218);
+	color: white;
+}
+
+#page-content .contact-section {
+	margin-top: 6%;
+	height: auto;
+}
+
+#page-content #engagement .row .col {
+	padding: 0;
+}
+
+#page-content hr {
+	border-color: rgb(99,205,218);
+}
+
+#page-content #engagement .row .col img {
+	display: block;
+	margin: auto;
+	padding-bottom: 2%;
+}
+
+.bg-blue {
+	background-color: rgb(99,205,218);
+}
+
+#dates {
+	font-size: 15px;
+	color: rgb(123,135,136);
+}
+
+#page-content #engagement .row .col video{
+	height: 70%;
+}
+
+footer {
+	margin-top: 5%;
+}
+
+footer .row {
+	padding: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: rgb(99,205,218);
+	color: #fff;
+}
+
+footer .row a {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	padding-top: 5%;
+	font-size: 13px;
+}
+
+footer .row a:hover {
+	color: #000;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+	.navbar {
+		text-align: center;
+	}
+
+	.page-content header {
+		margin-top: 10%;
+		max-width: 100%;
+	}
+
+	.page-content .contact-section {
+		margin-top: 15%;
+	}
+
+	#page-content #engagement .row .col {
+		width: 90%;
+	}
+
+	#page-content #engagement .row .col img {
+		margin: 10%;
+	}
+
+	footer .row {
+		padding: 5%;
+		text-align: center;
+	}
+}
