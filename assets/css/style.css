@@ -1265,33 +1265,108 @@ section {
     float: right
 }
 
-.exp .main-timeline .title {
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 24px;
-    margin: 0 0 15px 0
+    .exp .main-timeline .title {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px;
+        margin: 0 0 15px 0;
+    }
+
+.exp h5, h6 {
+    color: rgb(99,205,218)
 }
 
 .exp .main-timeline .description {
     margin-bottom: 0
 }
 
+.exp .timeline .row {
+    padding: 10px;
+    text-align: justify
+}
+
 @media only screen and (max-width: 991px) {
-    .exp .main-timeline .date-content {
-        margin-top: 35px
+    .exp .main-timeline {
+        position: relative;
     }
 
-    .exp .main-timeline .date-content:before {
-        width: 22.5%
-    }
+            .exp .main-timeline .date-content:before {
+                content: "";
+                width: 36.5%;
+                height: 2px;
+                background: #c6c6c6;
+                margin: auto 0;
+                position: absolute;
+                top: 0;
+                right: 0px;
+                bottom: 0
+            }
 
-    .exp .main-timeline .timeline-content {
-        padding: 10px 0 10px 30px
-    }
 
-    .exp .main-timeline .title {
-        font-size: 17px
-    }
+            .exp .main-timeline .date-outer:before,
+            .main-timeline .date-outer:after {
+                content: "";
+                width: 150px;
+                height: 110px;
+                margin: 0 auto;
+                border-radius: 50px;
+                position: absolute;
+                top: 10px;
+                left: 0;
+                right: 0;
+                transition: all 0.33s ease-out 0s
+            }
+
+            .exp .main-timeline .date-outer:before {
+                background: #fff;
+                border: 2px solid rgb(99,205,218);
+                left: -6px
+            }
+
+            .exp .main-timeline .date-outer:after {
+                border: 2px solid #c6c6c6;
+                left: 6px
+            }
+
+        .exp .main-timeline .timeline:hover .date-outer:before {
+            left: 6px
+        }
+
+        .exp .main-timeline .timeline:hover .date-outer:after {
+            left: -6px
+        }
+
+        .exp .main-timeline .date {
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            top: 27%;
+            left: 0
+        }
+
+        .exp .main-timeline .month {
+            font-size: 15px;
+            font-weight: 700
+        }
+
+        .exp .main-timeline .year {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            color: #232323;
+        }
+
+        .exp .main-timeline .timeline-content {
+            width: 70%;
+            padding: 20px 0 20px 50px;
+            float: right
+        }
+
+        .exp .main-timeline .title {
+            font-size: 17px;
+            font-weight: 700;
+            margin: 0 0 15px 0
+        }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1345,9 +1420,6 @@ section {
         margin-bottom: 10px
     }
 }
-
-
-
 
 
 .formation .main-timeline {
