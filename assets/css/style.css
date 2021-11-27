@@ -697,6 +697,17 @@ section {
   margin-bottom: 20px;
   color: #222222;
 }
+
+.portfolio-details .card-img-top {
+    width: 50%;
+    height: 50%;
+}
+
+.portfolio-details .cours-description {
+    margin: 0% 20%;
+    padding: 20px 0px;
+}
+
 .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
@@ -873,6 +884,7 @@ section {
         color: #fff;
         background: rgb(99,205,218);
     }
+
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
