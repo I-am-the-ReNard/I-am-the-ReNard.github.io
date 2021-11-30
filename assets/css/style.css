@@ -11,6 +11,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
+    font-size: 18px
 }
 
 a {
@@ -590,10 +591,10 @@ section {
   font-family: "Poppins", sans-serif;
   color: #222222;
 }
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
+    .skills .progress .skill .val {
+        float: right;
+        font-style: normal;
+    }
 .skills .progress-bar-wrap {
   background: #f3f3f3;
 }
@@ -602,6 +603,14 @@ section {
     height: 10px;
     transition: 0.9s;
     background-color: rgb(99,205,218);
+}
+
+.skills .row {
+    margin: 0 0 5% 0
+}
+
+.skills .list-group-item {
+    border: none;
 }
 
 /*--------------------------------------------------------------
@@ -667,6 +676,12 @@ section {
   font-style: italic;
   margin: 0 auto 15px auto;
 }
+
+.testimonials #values {
+    color: rgb(99,205,218);
+    margin: 10%
+}
+
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
     width: 80%;
@@ -1509,7 +1524,7 @@ section {
 
     .formation .main-timeline .description {
         color: #333;
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 1px;
     }
 
