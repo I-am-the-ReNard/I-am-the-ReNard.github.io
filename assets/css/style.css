@@ -573,6 +573,15 @@ section {
   margin-bottom: 0;
 }
 
+.services .services-about p {
+    padding: 10px;
+}
+
+.services .services-about .icon {
+    width: 32px;
+    height: 32px;
+}
+
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
@@ -606,7 +615,15 @@ section {
 }
 
 .skills .row {
-    margin: 0 0 5% 0
+    margin: 0 0 5% 0;
+}
+
+.skills svg,h3 {
+    margin: 5% 0 0 0;
+}
+
+.skills svg {
+    color: rgb(99,205,218);
 }
 
 .skills .list-group-item {
@@ -904,11 +921,11 @@ section {
   margin-right: 0;
 }
 .portfolio .portfolio-wrap {
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background: rgba(34, 34, 34, 0.6);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(127, 137, 161, 0.25);
 }
 .portfolio .portfolio-wrap::before {
   content: "";
