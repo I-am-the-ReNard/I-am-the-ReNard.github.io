@@ -751,6 +751,14 @@ section {
     height: 50%;
 }
 
+.table-hover {
+  font-size: 16px;
+}
+
+.table-hover:hover {
+    background-color: rgb(99,205,218,0.3);
+}
+
 .portfolio-details .obuda {
     background-color: #1d294d
 }
